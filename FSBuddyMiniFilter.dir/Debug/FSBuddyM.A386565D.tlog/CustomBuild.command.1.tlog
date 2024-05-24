@@ -1,0 +1,10 @@
+^C:\WORKSPACE\CODE\FSBUDDY-MINIFILTER\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Workspace/code/fsbuddy-minifilter -BC:/Workspace/code/fsbuddy-minifilter --check-stamp-file C:/Workspace/code/fsbuddy-minifilter/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,10 @@
+^C:\WORKSPACE\CODE\FSBUDDY-MINIFILTER\CMAKEFILES\204649EE5895F5859F09411122F9AF8D\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Workspace/code/fsbuddy-minifilter -BC:/Workspace/code/fsbuddy-minifilter --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Workspace/code/fsbuddy-minifilter/FSBuddyMiniFilter.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -14,6 +14,8 @@ include_directories("C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22
 add_executable(
     FSBuddyMiniFilter
     main.cpp
+    minifilter.hpp
+    minifilter.rc
     minifilter.cpp
 )
 
@@ -21,7 +23,7 @@ set_target_properties(
     FSBuddyMiniFilter 
     PROPERTIES 
     COMPILE_FLAGS
-    "-O3 -Wall -Wextra -Wpedantic -Werror"
+    "-Wall"
     OUTPUT_NAME
     "minifilter"
 )
